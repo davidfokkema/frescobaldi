@@ -109,6 +109,8 @@ jobs:
             ${{ matrix.briefcase-build-args }}
 
       - name: Package Frescobaldi
+        env:
+          CERTIFICATE_ID: ${{ secrets.CERTIFICATE_ID }}
         run: |
           ${{ matrix.briefcase-package-prefix }} \
           briefcase package \
