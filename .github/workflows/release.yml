@@ -34,7 +34,7 @@ jobs:
           - target: "macOS"
             output-format: "app"
             runs-on: "macos-latest"
-            briefcase-package-args: "--identity '$CERTIFICATE_ID'"
+            briefcase-package-args: '--identity "$CERTIFICATE_ID"'
             filename: dist/*.dmg
 
     steps:
