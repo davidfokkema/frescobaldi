@@ -19,7 +19,7 @@ jobs:
     name: Package Frescobaldi
     runs-on: ${{ matrix.runs-on }}
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         target: ["Windows", "macOS"]
         include:
