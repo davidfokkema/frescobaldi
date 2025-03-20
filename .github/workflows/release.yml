@@ -6,7 +6,10 @@ on:
   workflow_dispatch:
   release:
     types: [published]
-
+  push:
+    branches:
+      githubactions
+  
 env:
   FORCE_COLOR: "1"
 
